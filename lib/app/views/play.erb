@@ -1,0 +1,10 @@
+<p>Word so far: <%= @display %></p>
+<p>Incorrect guesses: <% if @misses.empty? %>none yet! <% else %><%= @misses %><% end %></p>
+<form action='/play' method='POST'>
+	<input type="text" name="letter"/>
+	<input type="submit" value="submit"/>
+</form>
+
+<% if @message %>
+	<p><%= @message %></p>
+<% end %>

@@ -1,0 +1,40 @@
+--- !ruby/object:A
+string: fuck you
+number: 1
+
+--- !ruby/object:A
+string: fuck you
+number: 2
+
+--- !ruby/object:A
+string: fuck you
+number: 3
+
+--- !ruby/object:A
+string: fuck you
+number: 4
+
+--- !ruby/object:A
+string: fuck you
+number: 5
+
+--- !ruby/object:A
+string: fuck you
+number: 6
+
+--- !ruby/object:A
+string: fuck you
+number: 7
+
+--- !ruby/object:A
+string: fuck you
+number: 8
+
+--- !ruby/object:A
+string: fuck you
+number: 9
+
+--- !ruby/object:A
+string: fuck you
+number: 10
+
