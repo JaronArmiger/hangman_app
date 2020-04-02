@@ -31,8 +31,10 @@ class HangmanApp < Sinatra::Base
 
 	get '/play' do
 		#print "session"; p session
-		@display = session[:display]
-		@misses = session[:misses]
+		#@display = session[:display]
+		@display = render_text(session[:display])
+		#@misses = session[:misses]
+		@misses = render_text(session[:misses])
 		@message = session.delete(:message)
 		erb :play
 	end
@@ -96,5 +98,17 @@ class HangmanApp < Sinatra::Base
 			return true
 		end
 		false
+	end
+
+	def render_text(text)
+		print "incoming text "; p text
+		rendered = ""
+		unless text.nil?
+			text.length.times do |i|
+				rendered << text[i] + " "
+			end
+		end
+		print "rendered ";p rendered
+		rendered
 	end
 end
